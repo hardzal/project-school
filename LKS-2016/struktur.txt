@@ -1,0 +1,146 @@
+#Belum Selesai
+---------------------
+index.php
+ home
+ login
+ register
+
+pages.php
+ about
+ contact
+ help
+ profile
+
+offers.php
+ show
+ add
+ view 
+
+requests.php
+ show
+ add
+ view
+
+myoffers.php
+ show
+ view
+ add
+ update
+ delete
+
+myrequest.php
+ show
+ view
+ add
+ update
+ delete 
+------------
+index.php?p=home
+index.php?p=login
+index.php?p=register
+
+pages.php?p=about
+pages.php?p=contact
+pages.php?p=help
+
+profil.php?p=show
+profil.php?p=view&id=1
+profil.php?p=update&id=1
+profil.php?p=delete&id=1
+
+routes.php?p=show
+routes.php?p=view&id=1
+routes.php?p=add
+routes.php?p=update&id=1
+routes.php?p=delete&id=1
+
+offers.php?p=show
+offers.php?p=add
+offers.php?p=booking&id=1
+
+myoffers.php?p=show
+myoffers.php?p=view&id=1
+myoffers.php?p=update&id=1
+myoffers.php?p=delete&id=1
+
+requests.php?p=show
+requests.php?p=add
+requests.php?p=booking
+
+myrequests.php?p=show
+myrequests.php?p=view&id=1
+myrequests.php?p=update&id=1
+myrequests.php?p=delete&id=1
+------------
+lks_kota_2016
+
+users
+ id
+ username
+ password
+ email 
+ nama_lengkap
+ photo_profil
+ deskripsi
+ type
+
+routes
+ id
+ id_user
+ source
+ target
+ price
+
+offers
+ id
+ id_user
+ id_route
+ departure
+ total_user
+ status
+
+requests
+ id
+ id_user
+ id_route
+ departure
+ total_user
+ status
+
+rates
+ id
+ id_user
+ sumrate
+ countrate
+
+
+tags
+ id
+ id_user
+ id_offer
+ nama_lengkap
+ no_hp
+ email
+ rate
+ review
+ status
+-------------------------------
+-- bm_users
+INSERT INTO bm_users VALUES('','driver_master',md5('password'),'driverbaru@booked.com','driver'),('','driver_baru',md5('12345'),'driverbaru@gmail.com','driver'),('','driver_lama',md5('54321'),'driverlama@gmail.com','driver');
+
+INSERT INTO bm_users VALUES('','user1',md5('katalewat'),'penumpangbaru@gmail.com','passengger'),('','user2',md5('67890'),'penumpanglama@gmail.com','passengger');
+
+-- bm_routes
+INSERT INTO bm_routes VALUES('','Tangerang','Serang','20000'),('','Jakarta','Bogor','15000'),('','Bandung','Garut','55000'),('',Palembang','Medan','200000'),('','Yogyakarta','Malang','60000')
+
+
+-- bm_offers
+INSERT INTO bm_offers VALUES('','1','2','2016-04-23 17:00','4'),('','2','3','2016-04-24 20:00','2'),('','3','1','2016-04-22 15:00');
+
+-- bm_requests
+INSERT INTO bm_requests VALUES('','4','','Bali-Jakarta','500000','2016-04-25 21:00','4'),('','5','5','','75000','4');
+
+
+-- bm_rates
+INSERT INTO bm_rates VALUES('','1','10','4'),('','2','12','3'),('','3','15,'4');
+-----------------------------------------

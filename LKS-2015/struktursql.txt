@@ -44,3 +44,6 @@ ip text
 sewa
  id_kat
  
+
+ USERNAME: admin    
+ PASSWORD: password

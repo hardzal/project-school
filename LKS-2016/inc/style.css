@@ -1,0 +1,306 @@
+/** reset default style browser **/
+*{
+	margin: 0;
+	padding: 0;
+	border: none;
+	vertical-align: baseline;
+	font-size: 100%;
+	max-width: 100% !important;
+}
+
+*::after,
+*::before{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+header, section, main, article, aside, footer, figure{display: block;}
+
+/** Text Style **/
+h1{font-size: 200%;}
+h2{font-size: 180%;}
+h3{font-size: 160%;}
+h4{font-size: 140%;}
+h5{font-size: 120%;}
+h6{font-size: 100%;}
+
+h1, h2, h3, h4, h5, h6{
+	margin: 1.5em 0;
+	font-weight: bold;
+}
+
+b, strong, th, dt{font-weight: bold;}
+i, em, cite{font-style: italic;}
+
+ul, ol{list-style: none;}
+ul{list-style: disc outside;}
+ol{list-style: decimal outside;}
+li{margin:.5em 0;}
+.right{text-align: right;}
+.left{text-align: left;}
+.center{text-align: center;}
+/** end text stlye **/
+
+
+table, th, tr, td{
+	border-collapse: collapse;
+	border: none;
+}
+table[border='1'],
+table[border='1'] th, 
+table[border='1'] td{
+	border:1px solid #aaa;
+	padding: 5px;
+}
+
+
+.clearfix{
+	display: block;
+	clear: both;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='submit']{
+	border: 1px solid #ddd;
+	padding: 5px;
+}
+textarea{
+	border: 1px solid #ddd;
+	display: block;
+	width: 20%;
+	height: 20%;
+}
+hr{
+	background-color: black;
+}
+hr.small{
+	background-color: black;
+	height: 5px;
+	width: 5%;
+}
+/*** end of reset default style ***/
+body{
+	font: normal normal 100%/1.4em 'Open Sans','Helvetica Neue',sans-serif,Verdana;
+	word-wrap: break-word;
+}
+a:link{
+	text-decoration: none;
+	color: #1D98F6;
+}
+a:visited{
+	color: #000;
+}
+a:hover{
+	text-decoration: underline;
+}
+a:active{
+	text-decoration: line-through;
+}
+
+#container{
+	max-width: 100%;
+	word-wrap: break-word;
+}
+
+header{
+	background-color: white;
+	border-bottom: 1px solid #ddd;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	width: 100%;
+}
+header #header{
+	width: 90%;
+	margin: 5px auto;
+	overflow: hidden;
+	position: relative;
+}
+header .header-left{
+	float: left;
+}
+header .header-left img{
+	width: 70%;
+}
+header .header-right{
+	float: right;
+}
+nav{
+	position: absolute;
+	right: 30px;
+	top:10px;
+}
+nav ul{
+	list-style: none;
+	height: 40px;
+	font-weight: 500;
+}
+nav li{
+	display: inline;
+	line-height: 40px;
+}
+nav li a{
+	margin: 0 15px;
+	float: left;
+	display: block;
+	transition: background .3s ease-in-out .2s;
+	-webkit-transition: background .3s ease-in .2s;
+	-moz-transition: background .3s ease-in .2s;
+	-o-transition: background .3s ease-in .2s;
+	color: #1D98F6;
+}
+
+nav.top-menu li a:visited{color: #1D98F6;}
+nav.top-menu li a:hover{
+	color:#000;
+	text-decoration: none;
+}
+
+section{
+	width: 100%;
+	background-image: url('../assets/slide2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	border-bottom: 1px solid #aaa;
+	height: 400px;
+	color: white;
+	margin-top: 50px;
+	position: relative;
+}
+
+section main, aside{
+	width: 90%;
+	margin: auto;
+}
+
+section .title{
+	float: left;
+	margin-top: 40px;
+}
+
+section .title h1{
+	margin-bottom: 60px;
+	font-size: 320%;
+}
+button, input[type='submit']{
+	transition: background .3s ease-out .2s;
+	-webkit-transition: background .3s ease-out .2s;
+	-moz-transition: background .3s ease-out .2s;
+	-o-transition: background .3s ease-out .2s;
+	cursor: pointer;
+}
+
+section .title button{
+	margin-top: 15px;
+	margin-left: 10px;
+	padding: 10px;
+	background-color: #1D98F6;
+	border: 2px solid #1D98F6;
+}
+
+section .title button a{
+	display: block;
+	color: white;
+	font-weight: 300;
+	font-weight: bold;
+}
+
+section .title button a:hover{
+	text-decoration: none;
+}
+section .title button:hover{
+	background-color: transparent;
+	border: 2px solid #1D98F6;
+}
+
+
+aside .side{
+	margin-bottom: 30px
+}
+aside .side h2{
+	font-weight: 400;
+	margin-bottom: 30px;
+}
+
+aside .side-info{
+
+}
+
+aside .side-how{
+	display: inline-block;
+	width: 30%;
+	margin-right: 20px;
+}
+
+aside .side-how img{
+
+}
+/*
+aside .side-log{
+	margin: 0 auto;
+	overflow: hidden;
+	width: 80%;
+}
+aside .side-log h2{
+	float: left;
+	text-align: center;
+}
+
+aside .side-log button{
+	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	background-color:#B8312F ;
+}
+
+aside .side-log button:hover{
+	background-color: #E25041;
+}
+aside .side-log button a{
+	color: white;
+}
+aside .side-log button a:hover{
+	text-decoration: none;
+	color: #ddd;
+}*/
+
+footer{
+	background-color: #242F39;
+	overflow: hidden;
+	color: #ddd;
+}
+
+footer #footer{
+	width: 90%;
+	margin: 0 auto;
+	padding:20px;
+}
+
+footer .side-bottom{
+	width: 40%;
+	float: left;
+}
+footer .side-bottom h3{
+	margin:0;
+	font-weight: 400;
+}
+footer .side-bottom ul{
+	list-style: none;
+}
+footer .side-bottom li{
+
+}
+footer .bottom{
+	background-color: #3B3F45;
+	padding: 20px;
+	text-align: center;
+}

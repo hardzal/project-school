@@ -22,7 +22,7 @@ include "head.php";
 		<div id='main-content'>
 			<?php
 				include "content.php";
-			?>		
+			?>
 			<aside class='kanan'>
 			<?php
 				include "sidebar.php";
@@ -32,8 +32,8 @@ include "head.php";
 		<div class='clear'></div>
 	<?php
 		include "footer.php";
-	?>	
-	</div>	
+	?>
+	</div>
 	<script src='css/jquery-1.11.3.min.js'></script>
 	<script type='text/javascript'>
 		$(function(){
