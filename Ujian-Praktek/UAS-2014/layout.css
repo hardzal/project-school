@@ -1,0 +1,183 @@
+/*===========================================================
+Nama 	: Muhammad Rizal
+Kelas	: X/MM3 	  	 
+Ujian Praktek Semester Genap 2013/2014
+24 Mei 2014
+
+============================================================*/
+body{
+	margin:0 auto;
+	font-size:14px;
+	font-family:Sans-serif,Verdana,Arial;
+	text-transform:capitalize;
+	background-color:#e74c3c;
+	color:#333;
+}
+a:link{
+	text-decoration:none;
+	color:#2980b9;
+}
+a:visited{
+	text-decoration:line-through;
+	color:#e74c3c;
+}
+a:hover{
+	text-decoration:underline;
+	color:#8e44ad;
+}
+a:active{
+	text-decoration:overline;
+	color:#95a5a6;
+}
+#bentuk{
+	margin:0 auto;
+	padding:10px;
+	border:2px double #aaa;
+	max-width:750px;
+	overflow:hidden;
+	background-color:#fff;
+	box-shadow:0px 1px 2px 3px #000;
+
+}
+h1{font-size:200%;}
+h2{font-size:180%;}
+h3{font-size:160%;}
+h4{font-size:140%;}
+h5{font-size:120%;}
+h6{font-size:100%;}
+#pelangi{
+	width:100%;
+	height:10px;
+	overflow:hidden;
+	display:inline-block;
+}
+.yellow{
+	width:25%;
+	background-color:yellow;
+	height:10px;
+}
+.green{
+	width:25%;
+	background-color:green;
+	height:10px;
+
+}
+.red{
+	width:25%;
+	background-color:red;
+	height:10px;
+}
+.blue{
+	width:25%;
+	background-color:blue;
+	height:10px;
+}
+nav *{
+	margin:0;
+	padding:0;
+
+}
+nav#nav{
+	background-color:#3498db;
+	font-size:14px;
+}
+nav#nav a{
+	display:block;
+	padding:0 15px;
+	color:black;
+}
+nav#nav ul {
+	height:30px;
+	margin:0 0;
+	padding:0 0;
+}
+nav#nav li a{
+	color:black;
+	text-transform:uppercase;
+	line-height:30px;
+	display:block;
+	}
+nav#nav li:hover{
+	background-color:orange;
+	display:block;
+} 
+nav#nav li a:hover{
+	text-decoration:none;
+}
+nav#nav li{
+	display:inline;
+	padding:0 15px;
+	position:relative;
+	float:left;
+}
+article{
+	margin-bottom:30px;
+	margin-top:10px;
+	overflow:hidden;
+}
+.sidel{
+	width:150px;
+	padding:10px;
+	float:left;
+	border:1px solid #ddd;
+}
+button{
+	cursor:pointer;
+}
+.preview{
+
+}
+
+.komik img{
+	width:170px;
+	height:200px;
+	border:1px double #ddd;
+	float:left;
+	margin:5px;
+}
+.sider{
+	width:555px;
+	padding:8px;
+	border:1px solid #ddd;
+	float:left;
+	margin:0px 5px;
+}
+.sider h2 + a{
+	background-color:orange;
+	color:white;
+	padding:10px;
+	border:3px outset #27ae60;
+
+}
+.sider h2 + a:hover{
+	background-color:white;
+	color:orange;
+	border:3px inset #16a085;
+}
+.sider h2 ~ table{
+		margin-top:20px;
+}
+.sider h2{
+	text-transform:uppercase;
+	font-family:Roboto;
+	border-bottom:4px solid #aaa;
+}
+.sidel h3{
+	text-transform:uppercase;
+	border-bottom:2px double #000;
+}
+table{
+	border:2px double black;
+}
+th,tr,td{
+	border:1px solid black;
+}
+tr(odd){
+	background-color:gray;
+}
+footer{
+	clear:both;
+	border:1px solid #ddd;
+	text-align:center;
+	margin-top:5px;
+}

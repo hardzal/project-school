@@ -1,0 +1,56 @@
+Sistem Perpustakaan
+
+- Login/Register Form
+
+Guest 
+ - Melihat Seluruh Halaman
+ - Melihat Sinopsis buku
+
+Member
+ - Mengakses Seluruh Halaman
+ - Melihat dan Meminjam Buku
+
+Login Member -> Melihat buku -> Meminjam buku -> 
+
+password
+12345
+
+Akun
+ id_akun
+ username
+ password
+ nama lengkap
+ email
+ alamat
+ status
+ level
+ 
+buku
+ id_buku 
+ judul
+ gambar_buku
+ file_buku
+ pengarang
+ penerbit
+ stok
+ sinopsis
+
+peminjaman
+ id_pinjam
+ id_buku
+ id_akun
+ tanggal_pinjam
+ tanggal_kembali
+ status
+
+kategori
+id_kategori
+nama_kategori
+keterangan
+
+
+ 
+ 
+hit_pengunjung
+id
+ip
